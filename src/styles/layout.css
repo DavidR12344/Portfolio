@@ -1,0 +1,116 @@
+/* layout.css */
+
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #191919;
+}
+
+header {
+    background-color: black;
+    padding: 1.25rem;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1.25rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #666;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.home-content {
+  margin-left: 200px;
+  /*padding: 1px 16px;*/
+}
+
+.about-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 20px;
+    gap: 20px;
+  }
+  
+  .about-grid section {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  span {
+    display: inline-block;
+    margin-left: 10px; /* Adjust the gap between h1 and span */
+  }
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #efefef;
+    text-align: center;
+    padding: 1.25rem 0;
+    z-index: 999;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 1.25rem;
+}
+
+.footer-links li a {
+    margin: 0;
+    color: #333;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-links li a:visited {
+    color: #1a7ac4;
+    transition: color .12s ease-out 0s;
+}
