@@ -4,7 +4,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 
 function Contact() {
-    return <div className="contact-content">
+    return <div className="page-content">
         <Header title="Contact me" />
         <div className="container">
             <main className="">

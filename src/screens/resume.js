@@ -4,7 +4,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 
 function Resume() {
-    return <div className="resume-content">
+    return <div className="page-content">
         <Header title="Resume" />
         <div className="container">
             <main className="">

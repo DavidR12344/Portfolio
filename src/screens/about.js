@@ -5,7 +5,7 @@ import Footer from '../components/footer';
 
 function About() {
     return (
-        <div className="about-content">
+        <div className="page-content">
             <Header title="About Me" />
             <div className="container">
                 <main className="about-grid">

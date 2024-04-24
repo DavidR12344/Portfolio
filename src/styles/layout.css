@@ -8,12 +8,13 @@ body {
     font-size: 1rem;
     max-width: 100%;
     font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #191919;
+    background-color: #f2f2f2;
+    color: #333;
 }
 
 header {
-    background-color: black;
+    background-color: #1a1a2e;
+    color: white;
     padding: 1.25rem;
     position: relative;
     z-index: 1;
@@ -50,14 +51,9 @@ nav ul li a:hover {
     padding: 0 1.25rem;
 }
 
-.home-content {
-  margin-left: 200px;
-  /*padding: 1px 16px;*/
-}
-
-.about-content {
+.page-content {
     margin-left: 200px;
-    padding: 20px;
+    padding-left: 0px;
 }
 
 .about-grid {
@@ -83,7 +79,8 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #efefef;
+    background-color: #1a1a2e;;
+    color: white;
     text-align: center;
     padding: 1.25rem 0;
     z-index: 999;

@@ -4,7 +4,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 
 function Skills() {
-    return <div className="skills-content">
+    return <div className="page-content">
         <Header title="Skills" />
         <div className="container">
             <main className="">
