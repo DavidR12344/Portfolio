@@ -7,16 +7,43 @@ import AllProjects from '../components/allProjects';
 function Project() {
     const projects = [
         {
-            title: "Project 1",
-            language: "JavaScript",
-            githubLink: "https://github.com/example/project1"
+            title: "TodoList",
+            language: "C# console application",
+            githubLink: "https://github.com/DavidR12344/ToDoList.git"
         },
         {
-            title: "Project 2",
-            language: "Python",
-            githubLink: "https://github.com/example/project2"
+            title: "Checkpoint2",
+            language: "C# console application",
+            githubLink: "https://github.com/DavidR12344/Checkpoint2.git"
         },
+        {
+            title: "AssetTracking",
+            language: "C# console application",
+            githubLink: "https://github.com/DavidR12344/AssetTracking.git"
+        },
+        {
+            title: "CV",
+            language: "HTML",
+            githubLink: "https://github.com/DavidR12344/CV_project.git"
+        },
+        {
+            title: "Munamii Cakery",
+            language: "HTML & Javascript",
+            githubLink: "https://github.com/DavidR12344/Munamii-cakery.git"
+        },
+        {
+            title: "CV",
+            language: "React",
+            githubLink: "https://github.com/DavidR12344/Cv_React.git"
+        },
+        {
+            title: "Portfolio",
+            language: "React",
+            githubLink: "https://github.com/DavidR12344/Portfolio.git"
+        },
+
     ];
+
 
     return <div className="page-content">
         <Header title="Project" />
