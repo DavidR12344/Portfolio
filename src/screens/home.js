@@ -1,7 +1,22 @@
 import React from 'react';
 import '../styles/styles.css';
+import Profile from '../components/profile';
+import AllProjects from '../components/allProjects';
 
 function Home() {
+    const projects = [
+        {
+            title: "Project 1",
+            language: "JavaScript",
+            githubLink: "https://github.com/example/project1"
+        },
+        {
+            title: "Project 2",
+            language: "Python",
+            githubLink: "https://github.com/example/project2"
+        },
+    ];
+
     return (
         <div className="page-content">
             <header>
@@ -11,11 +26,21 @@ function Home() {
             <main>
                 <section>
                     <h2>About Me</h2>
-                    <p>This is where you can introduce yourself.</p>
+                    <Profile
+                    title="Personal Information"
+                    name="David Ruland"
+                    email="david.ruland1@gmail.com"
+                    from="Sweden"
+                    subtitle="Education & Languages"
+                    education="App developer/System developer"
+                    language="Swedish, English"
+                    optional="Experience"
+                    doing="Develop and construct apps and websites for customer requirements"
+                />
                 </section>
                 <section>
                     <h2>My Projects</h2>
-                    <p>Here you can showcase your projects.</p>
+                    <AllProjects projects={projects} />
                 </section>
                 <section>
                     <h2>My Skills</h2>
