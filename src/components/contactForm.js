@@ -1,19 +1,32 @@
 import React from "react";
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
-function ContactForm({ firstName, lastName, email, message  }) {
-    return <div className="form-container">
-        <form action=""> 
-        <label for="fname">{firstName}</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name"/>
-        <label for="lname">{lastName}</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
-        <label for="email">{email}</label>
-        <input type="text" id="email" name="email" placeholder="Email.."/>
-        <label for="subject">{message}</label>
-        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-        <input type="submit" value="Submit"/>
-        </form>
-    </div>
+function ContactForm({ firstName, lastName, email, message }) {
+    return (
+            <Form>
+                <Form.Group controlId="firstName">
+                    <Form.Label>{firstName}</Form.Label>
+                    <Form.Control type="text" placeholder="Your name" />
+                </Form.Group>
+
+                <Form.Group controlId="lastName">
+                    <Form.Label>{lastName}</Form.Label>
+                    <Form.Control type="text" placeholder="Your last name.." />
+                </Form.Group>
+
+                <Form.Group controlId="email">
+                    <Form.Label>{email}</Form.Label>
+                    <Form.Control type="text" placeholder="Email.." />
+                </Form.Group>
+
+                <Form.Group controlId="message">
+                    <Form.Label>{message}</Form.Label>
+                    <Form.Control as="textarea" rows={3} placeholder="Write something.." />
+                </Form.Group>
+                <Button as="input" type="submit" value="Submit" />
+            </Form>
+    );
 }
 
 export default ContactForm;

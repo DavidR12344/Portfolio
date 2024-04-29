@@ -1,18 +1,22 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./projectCard";
 
 function AllProjects({ projects }) {
     return (
-        <div className="project-grid">
-            {projects.map((project, index) => (
-                <ProjectCard
-                    key={index}
-                    title={project.title}
-                    language={project.language}
-                    githubLink={project.githubLink}
-                />
-            ))}
-        </div>
+        <Container>
+            <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                {projects.map((project, index) => (
+                    <Col key={index}>
+                        <ProjectCard
+                            title={project.title}
+                            language={project.language}
+                            githubLink={project.githubLink}
+                        />
+                    </Col>
+                ))}
+            </Row>
+        </Container>
     );
 }
 

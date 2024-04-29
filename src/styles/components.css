@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #1a1a2e;
+    background-color: #003E71;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -72,7 +72,7 @@ input[type=submit]:hover {
 
 .form-container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #F5F5DC;
   padding: 20px;
 }
 
@@ -85,8 +85,8 @@ input[type=submit]:hover {
 }
 
 .project-card {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
+  background-color: #F5F5DC;
+  border: 2px solid #BDBAAF;
   border-radius: 5px;
   padding: 20px;
   margin: 10px;
@@ -111,10 +111,21 @@ input[type=submit]:hover {
   text-decoration: underline;
 }
 
+.custom-card {
+  width: 18rem;
+  height: 300px; 
+}
+
+.custom-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+}
+
 
 .resume-card {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
+  background-color: #F5F5DC;
+  border: 2px solid #BDBAAF;
   border-radius: 5px;
   padding: 20px;
   margin: 10px;

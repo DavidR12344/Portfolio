@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 import profileImg from '../images/profil.jpg';
 
 function Sidebar() {
   return (
-    <div className="sidebar">
-      <img className="profile-image" src={profileImg} alt="Profile" />
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="contact">Contact</Link></li>
-        <li><Link to="/project">Project</Link></li>
-        <li><Link to="/resume">Resume</Link></li>
-        <li><Link to="/skills">Skills</Link></li>
+    <Container className="sidebar">
+      <img className="profile-image img-fluid rounded-circle mb-4" src={profileImg} alt="Profile" />
+      <ul className="list-unstyled">
+        <li><Link to="/" className="text-decoration-none text-dark">Home</Link></li>
+        <li><Link to="/about" className="text-decoration-none text-dark">About</Link></li>
+        <li><Link to="/contact" className="text-decoration-none text-dark">Contact</Link></li>
+        <li><Link to="/project" className="text-decoration-none text-dark">Project</Link></li>
+        <li><Link to="/resume" className="text-decoration-none text-dark">Resume</Link></li>
+        <li><Link to="/skills" className="text-decoration-none text-dark">Skills</Link></li>
       </ul>
-    </div>
+    </Container>
   );
 }
 
 export default Sidebar;
+

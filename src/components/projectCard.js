@@ -1,13 +1,17 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
 
 function ProjectCard({ title, language, githubLink }) {
     return (
-        <div className="project-card">
-            <h3>{title}</h3>
-            <p>Language: {language}</p>
-            <a href={githubLink} target="_blank" rel="noopener noreferrer">GitHub Link</a>
-        </div>
+        <Card className="project-card">
+            <Card.Body>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>Language: {language}</Card.Text>
+                <Card.Link href={githubLink} target="_blank" rel="noopener noreferrer">GitHub Link</Card.Link>
+            </Card.Body>
+        </Card>
     );
 }
 
 export default ProjectCard;
+

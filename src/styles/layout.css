@@ -8,12 +8,12 @@ body {
     font-size: 1rem;
     max-width: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #8CC9FC;
     color: #333;
 }
 
 header {
-    background-color: #1a1a2e;
+    background-color: #003E71;
     color: white;
     padding: 1.25rem;
     position: relative;
@@ -65,7 +65,8 @@ nav ul li a:hover {
   
   .about-grid section {
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #BDBAAF;
+    background-color: #F5F5DC;
   }
   
   span {
@@ -79,7 +80,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #1a1a2e;;
+    background-color: #003E71;;
     color: white;
     text-align: center;
     padding: 1.25rem 0;
