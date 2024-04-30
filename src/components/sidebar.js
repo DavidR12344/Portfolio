@@ -7,7 +7,7 @@ function Sidebar() {
   return (
     <Container className="sidebar">
       <img className="profile-image img-fluid rounded-circle mb-4" src={profileImg} alt="Profile" />
-      <ul className="list-unstyled">
+      <ul>
         <li><Link to="/" className="text-decoration-none text-dark">Home</Link></li>
         <li><Link to="/about" className="text-decoration-none text-dark">About</Link></li>
         <li><Link to="/contact" className="text-decoration-none text-dark">Contact</Link></li>

@@ -18,7 +18,7 @@ function Home() {
             <Container>
                 <main>
                     <section>
-                        <h2>About Me</h2>
+                        <h2 className="subtitle">About Me</h2>
                         <Profile
                             title="Personal Information"
                             name="David Ruland"
@@ -32,19 +32,19 @@ function Home() {
                         />
                     </section>
                     <section>
-                        <h2>My Projects</h2>
+                        <h2 className="subtitle">My Projects</h2>
                         <AllProjects projects={projects} />
                     </section>
                     <section>
-                        <h2>My Skills</h2>
+                        <h2 className="subtitle">My Skills</h2>
                         <AllSkills skills={skills} />
                     </section>
                     <section>
-                        <h2>My Resume</h2>
+                        <h2 className="subtitle">My Resume</h2>
                         <MyResume profile={profileImg} link="www.linkedin.com/in/david-ruland-4931b9189" />
                     </section>
                     <section>
-                        <h2>Contact Me</h2>
+                        <h2 className="subtitle">Contact Me</h2>
                         <ContactForm firstName="First name" lastName="Last name" email="Email" message="Subject" />
                     </section>
                 </main>

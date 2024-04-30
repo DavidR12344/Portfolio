@@ -5,7 +5,7 @@ function Header({ title }) {
     return (
         <header className="bg-dark text-white py-4">
             <Container>
-                <h1>{title}</h1>
+                <h1 className="title">{title}</h1>
             </Container>
         </header>
     );

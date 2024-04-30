@@ -1,12 +1,16 @@
 import React from "react";
+import { Card } from "react-bootstrap";
 
-function Card({ icon, language }) {
+function CardLayout({ icon, language }) {
     return (
-        <div className="project-card">
-            <div className="icon">{icon}</div>
-            <p className="language">{language}</p>
-        </div>
+        <Card className="project-card">
+            <Card.Body>
+                <div className="icon">{icon}</div>
+                <Card.Text className="language">{language}</Card.Text>
+            </Card.Body>
+        </Card>
     );
 }
 
-export default Card;
+export default CardLayout;
+

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Card from "./card";
+import CardLayout from "./card";
 
 function AllSkills({ skills }) {
     return (
@@ -8,7 +8,7 @@ function AllSkills({ skills }) {
             <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 {skills.map((skill, index) => (
                     <Col key={index}>
-                        <Card
+                        <CardLayout
                             icon={skill.icon}
                             language={skill.language}
                         />
