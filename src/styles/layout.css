@@ -52,24 +52,24 @@ nav ul li a:hover {
 }
 
 .page-content {
-    margin-left: 200px;
+    margin-left: 12.5rem;
     padding-left: 0px;
 }
 
 #main {
     transition: margin-left .5s;
-    padding: 20px 
+    padding: 1.25rem 
 }
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    padding-top: 1.25rem;
     gap: 1rem;
 }
 
 .about-grid section {
-    padding: 20px;
+    padding: 1.25rem;
     border: 2px solid #BDBAAF;
     background-color: #F5F5DC;
 }
@@ -81,7 +81,7 @@ nav ul li a:hover {
 
   span {
     display: inline-block;
-    margin-left: 10px; /* Adjust the gap between h1 and span */
+    margin-left: 0.625rem; /* Adjust the gap between h1 and span */
   }
 
 

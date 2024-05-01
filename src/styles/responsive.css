@@ -4,7 +4,7 @@
 @media (max-width: 576px) {
     .sidebar {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .page-content {
@@ -20,11 +20,11 @@
 /* For tablets and larger devices */
 @media (min-width: 768px) {
     .about-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
     }
 
     .page-content {
-        margin-left: 200px;
+        margin-left: 12.5rem;
     }
 }
 
