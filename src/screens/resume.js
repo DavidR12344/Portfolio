@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/styles.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import MyResume from '../components/myResume';
@@ -11,7 +12,7 @@ function Resume() {
             <Header title="Resume" />
             <Container>
                 <Row>
-                    <Col>
+                    <Col xs={12} md={6}>
                         <MyResume profile={profileImg} link="https://www.linkedin.com/in/david-ruland-4931b9189" />
                     </Col>
                 </Row>

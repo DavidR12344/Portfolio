@@ -1,12 +1,31 @@
 .sidebar {
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
-  width: 12.5rem; /*200px*/
+  width: 12.5rem; 
   background-color: #003E71;
   position: fixed;
   height: 100%;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: width 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar-content {
+  padding-top: 20px;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: -25px;
+  cursor: pointer;
 }
 
 .sidebar a {
@@ -29,6 +48,28 @@
   font-size: 2.25rem;
   margin-left: 3.125rem;
 }
+
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+
+.bar.open:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 
 ul {
   list-style-type: none;
@@ -93,6 +134,23 @@ input[type=submit]:hover {
   border-radius: 0.313rem;
   background-color: #F5F5DC;
   padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+}
+
+´´
+.btn-submit {
+  padding: 0.5rem; 
 }
 
 .project-grid {

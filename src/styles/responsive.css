@@ -1,39 +1,105 @@
 /* responsive.css */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .profile-image {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 0.625rem;
+    }
 
-/* For small devices like smartphones */
-@media (max-width: 576px) {
-    .sidebar {
+    .project-card {
         width: 100%;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .language {
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .profile-image {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 0.938rem;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .language {
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .profile-image {
+        width: 6.25rem;
+        height: 6.25rem;
         margin-bottom: 1.25rem;
     }
 
-    .page-content {
-        margin-left: 0; 
+    .project-card {
+        width: 50%;
     }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 0; 
-    }
-}
-
-/* For tablets and larger devices */
-@media (min-width: 768px) {
-    .about-grid {
-        grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    .icon {
+        font-size: 3rem;
     }
 
-    .page-content {
-        margin-left: 12.5rem;
+    .language {
+        font-size: 1.5rem;
     }
 }
 
-/* For larger desktops */
-@media (min-width: 992px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .profile-image {
+        width: 7.5rem;
+        height: 7.5rem;
+        margin-bottom: 1.563rem;
+    }
 
+    .project-card {
+        width: 33.33%;
+    }
+
+    .icon {
+        font-size: 4rem;
+    }
+
+    .language {
+        font-size: 2rem;
+    }
 }
 
-/* For extra large desktops */
-@media (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .profile-image {
+        width: 8.75rem;
+        height: 8.75rem;
+        margin-bottom: 1.875rem;
+    }
 
+    .project-card {
+        width: 25%;
+    }
+
+    .icon {
+        font-size: 5rem;
+    }
+
+    .language {
+        font-size: 2.5rem;
+    }
 }

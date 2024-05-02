@@ -5,18 +5,18 @@ function Profile({ title, name, email, from, subtitle, education, language, opti
     return (
         <Container>
             <Row className="about-grid">
-                <Col className="col-grid">
+                <Col xs={12} md={4} className="col-grid">
                     <h2 className="profile-title">{title}</h2>
                     <p>Name: <span>{name}</span></p>
                     <p>Email: <span>{email}</span></p>
                     <p>From: <span>{from}</span></p>
                 </Col>
-                <Col className="col-grid">
+                <Col xs={12} md={4} className="col-grid">
                     <h2 className="profile-title">{subtitle}</h2>
                     <p>Education: <span>{education}</span></p>
                     <p>Languages: <span>{language}</span></p>
                 </Col>
-                <Col className="col-grid">
+                <Col xs={12} md={4} className="col-grid">
                     <h2 className="profile-title">{optional}</h2>
                     <p>What I do: <span>{doing}</span></p>
                 </Col>
@@ -26,3 +26,4 @@ function Profile({ title, name, email, from, subtitle, education, language, opti
 }
 
 export default Profile;
+

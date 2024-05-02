@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 function Header({ title }) {
     return (
         <header className="bg-dark text-white py-4">
-            <Container>
+            <Container fluid>
                 <h1 className="title">{title}</h1>
             </Container>
         </header>

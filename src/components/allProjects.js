@@ -7,7 +7,7 @@ function AllProjects({ projects }) {
         <Container>
             <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 {projects.map((project, index) => (
-                    <Col key={index}>
+                    <Col key={index} xs={12} md={6} lg={4}>
                         <ProjectCard
                             title={project.title}
                             language={project.language}
